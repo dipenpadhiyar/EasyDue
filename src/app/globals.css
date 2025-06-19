@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'PT Sans', sans-serif; /* Set default font */
+}
+
+@layer base {
+  :root {
+    --background: 60 20% 95%; /* #F5F5F0 */
+    --foreground: 60 10% 10%;
+
+    --card: 60 20% 100%;
+    --card-foreground: 60 10% 10%;
+
+    --popover: 60 20% 100%;
+    --popover-foreground: 60 10% 10%;
+
+    --primary: 125 30% 74%; /* #A7D1AB */
+    --primary-foreground: 125 30% 15%;
+
+    --secondary: 60 20% 90%;
+    --secondary-foreground: 60 10% 15%;
+
+    --muted: 60 20% 85%;
+    --muted-foreground: 60 10% 45%; /* Adjusted for better contrast */
+
+    --accent: 208 38% 70%; /* #95B8D1 */
+    --accent-foreground: 208 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 60 20% 80%;
+    --input: 60 20% 88%;
+    --ring: 125 30% 65%; /* Primary color based ring */
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors */
+    --sidebar-background: 60 20% 92%;
+    --sidebar-foreground: 60 10% 20%;
+    --sidebar-primary: 125 30% 74%;
+    --sidebar-primary-foreground: 125 30% 15%;
+    --sidebar-accent: 208 38% 75%;
+    --sidebar-accent-foreground: 208 30% 15%;
+    --sidebar-border: 60 20% 85%;
+    --sidebar-ring: 125 30% 65%;
+
+    --chart-1: 125 30% 60%; /* Based on primary */
+    --chart-2: 208 38% 60%; /* Based on accent */
+    --chart-3: 30 80% 65%; /* A warm complementary color */
+    --chart-4: 180 40% 55%; /* A cool complementary color */
+    --chart-5: 0 0% 50%; /* Neutral gray */
+  }
+
+  .dark {
+    --background: 240 10% 10%;
+    --foreground: 240 5% 95%;
+
+    --card: 240 10% 15%;
+    --card-foreground: 240 5% 95%;
+
+    --popover: 240 10% 15%;
+    --popover-foreground: 240 5% 95%;
+
+    --primary: 125 30% 60%;
+    --primary-foreground: 125 25% 95%;
+
+    --secondary: 240 10% 20%;
+    --secondary-foreground: 240 5% 90%;
+
+    --muted: 240 10% 25%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 208 35% 60%;
+    --accent-foreground: 208 25% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 10% 30%;
+    --input: 240 10% 28%;
+    --ring: 125 30% 50%;
+
+    /* Sidebar specific colors */
+    --sidebar-background: 240 10% 12%;
+    --sidebar-foreground: 240 5% 90%;
+    --sidebar-primary: 125 30% 60%;
+    --sidebar-primary-foreground: 125 25% 95%;
+    --sidebar-accent: 208 35% 65%;
+    --sidebar-accent-foreground: 208 25% 95%;
+    --sidebar-border: 240 10% 25%;
+    --sidebar-ring: 125 30% 50%;
+
+    --chart-1: 125 30% 70%;
+    --chart-2: 208 38% 70%;
+    --chart-3: 30 80% 75%;
+    --chart-4: 180 40% 65%;
+    --chart-5: 0 0% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
