@@ -1,5 +1,10 @@
-# Firebase Studio
+# 🧾 ShopEase – Simple Customer Khata & Billing Tracker
 
-This is a NextJS starter in Firebase Studio.
+Track monthly customer payments easily.  
+Add customer entries with paid & due amounts.  
+View smart analytics to understand your income trends.  
 
-To get started, take a look at src/app/page.tsx.
+![Home](/images/home.png)
+![Home](/images/user_data.png)
+![Home](/images/analytics.png)
+
